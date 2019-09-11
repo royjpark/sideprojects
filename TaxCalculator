@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TaxCalculator{
+
+     public static void main(String []args){
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Input total amount: ");
+        double amt = scan.nextDouble();
+        
+        System.out.println("Input rate of tax as a decimal such as 0.xx: ");
+        double tax = scan.nextDouble();
+        
+        double taxed = amt * tax;
+        
+        System.out.println("Taxed amount: " + taxed);
+     }
+}
